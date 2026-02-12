@@ -1,6 +1,8 @@
 node-beacon-scanner
 ===============
 
+*NOTE about this fork*: Replaced the out-dated [@abandonware/noble](@abandonware/noble) with the more recent [@stoprocent/noble](https://github.com/stoprocent/noble).  
+  
 The node-beacon-scanner is a Node.js module which allows you to scan BLE beacon packets and parse the packet data. This module supports iBeacon, Eddystone, and Estimote.
 
 The supported beacon data formats are as follows:
@@ -15,22 +17,20 @@ The supported beacon data formats are as follows:
 
 ## Dependencies
 
-* [Node.js](https://nodejs.org/en/) 6 +
-* [@abandonware/noble](https://github.com/abandonware/noble)
+* [Node.js](https://nodejs.org/en/) 20.19.0 +
+* [@stoprocent/noble](https://github.com/stoprocent/noble)
 
-See the document of the [@abandonware/noble](https://github.com/abandonware/noble) for details on installing the [@abandonware/noble](https://github.com/abandonware/noble).
-
-Note that the noble has to be run as root on most of Linux environments. See the the document of the [@abandonware/noble](https://github.com/abandonware/noble) for details.
-
-The early versions of this module depended on [noble](https://github.com/sandeepmistry/noble) for BLE handling. But the [noble](https://github.com/sandeepmistry/noble) seems not to support Node v10 or later versions. Now, this module is employing [@abandonware/noble](https://github.com/abandonware/noble), which was forked from [noble](https://github.com/sandeepmistry/noble). For the purouse of the backward compatibility, this module works with [noble](https://github.com/sandeepmistry/noble) on Node v8 or earlier versions.
-
+See the document of the [@stoprocent/noble](https://github.com/stoprocent/noble) for details on installing noble if you experience issues.  
+  
+Note that noble has to be run as root on most of Linux environments.  
+  
 
 ## Installation
 
 ```
 $ cd ~
-$ npm install @abandonware/noble
-$ npm install node-beacon-scanner
+$ npm install @stoprocent/noble
+$ npm install bytemind-de/node-beacon-scanner
 ```
 
 ---------------------------------------
@@ -404,6 +404,8 @@ Property       |     |Type     |Description
 ---------------------------------------
 ## <a id="Release-Note">Release Note</a>
 
+* v0.3.0 (2026-02-12)
+  * Updated noble version to more recent [@stoprocent/noble](https://github.com/stoprocent/noble)
 * v0.2.2 (2019-11-24)
   * Fixed a bug that the `txPower` of iBeacon was wrong. ([Thanks to @girtgirt](https://github.com/futomi/node-beacon-scanner/pull/12))
   * Fixed a bug that an exception was thrown whenever it received an advertisement packet without service data. ([Thanks to @charlesread](https://github.com/futomi/node-beacon-scanner/issues/11))
@@ -434,7 +436,7 @@ Property       |     |Type     |Description
 * [Estimote packet specs](https://github.com/estimote/estimote-specs)
 
 ---------------------------------------
-## <a id="License">License</a>
+## <a id="License">Original License</a>
 
 The MIT License (MIT)
 
