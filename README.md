@@ -1,7 +1,7 @@
 node-beacon-scanner
 ===============
 
-*NOTE about this fork*: Replaced the out-dated [@abandonware/noble](@abandonware/noble) with the more recent [@stoprocent/noble](https://github.com/stoprocent/noble).  
+**NOTE about this fork**: Replaced the out-dated [@abandonware/noble](@abandonware/noble) with the more recent [@stoprocent/noble](https://github.com/stoprocent/noble).  
   
 The node-beacon-scanner is a Node.js module which allows you to scan BLE beacon packets and parse the packet data. This module supports iBeacon, Eddystone, and Estimote.
 
@@ -438,6 +438,8 @@ Property       |     |Type     |Description
 ---------------------------------------
 ## <a id="License">Original License</a>
 
+https://github.com/futomi/node-beacon-scanner  
+  
 The MIT License (MIT)
 
 Copyright (c) 2017-2019 Futomi Hatano
