@@ -32,6 +32,6 @@
   },
   "readmeFilename": "README.md",
   "dependencies": {
-    "@stoprocent/noble": "^2.3.10"
+    "@stoprocent/noble": "^2.3.16"
   }
 }
